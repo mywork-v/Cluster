@@ -35,7 +35,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 52.1.202.183.nip.io
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:

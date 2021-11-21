@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - mywork-v/Cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.52.1.202.183.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
