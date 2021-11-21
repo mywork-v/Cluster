@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         mywork-v/Cluster: true
+        mywork-v/Go-Project-JX: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         mywork-v/Cluster: merge
+        mywork-v/Go-Project-JX: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - mywork-v/Cluster
+        - mywork-v/Go-Project-JX
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - mywork-v/Cluster
+        - mywork-v/Go-Project-JX
       target_url: http://lighthouse-jx.52.1.202.183.nip.io/merge/status
 kind: ConfigMap
 metadata:
