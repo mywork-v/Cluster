@@ -20,6 +20,7 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
+    chartRepository: http://jenkins-x-chartmuseum.jx.svc.cluster.local:8080
     devEnvApprovers:
     - todo
     environmentGitOwner: todo
@@ -29,6 +30,8 @@ jxRequirements:
     provider: eks
   environments:
   - key: dev
+    owner: mywork-v
+    repository: Cluster
   - key: staging
   - key: production
   ingress:
@@ -39,6 +42,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: bit7x
   repository: nexus
   secretStorage: vault
   vault: {}
