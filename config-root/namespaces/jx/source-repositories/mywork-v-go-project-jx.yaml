@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mywork-v
+    provider: github
+    repository: Go-Project-JX
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mywork-v-go-project-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mywork-v/Go-Project-JX.git
+  org: mywork-v
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: Go-Project-JX
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mywork-v/Go-Project-JX
